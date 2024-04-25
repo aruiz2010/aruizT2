@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aruizT2.Vistas.vCalificaciones"
+             Title="vCalificaciones">
+    <ScrollView>
+    <VerticalStackLayout>
+            <Label></Label>
+
+            <Label Text="Aplicacion movil calificaciones UISRAEL"
+               TextColor="Blue"
+               FontSize="Medium"
+               HorizontalTextAlignment="Center"></Label>
+            <Picker x:Name="pkEstudiantes" Title="Estudiantes">
+                <Picker.Items>
+                    <x:String>Adriana</x:String>
+                    <x:String>Dayana</x:String>
+                    <x:String>Stephany</x:String>
+                    <x:String>Henry</x:String>
+                    <x:String>Fernando</x:String>
+                </Picker.Items>
+            </Picker>
+            <DatePicker x:Name="dpFecha" 
+                        Date="04/21/2024" 
+                        Format="MM/dd/yyyy">
+            </DatePicker>
+            <Label Text="Parcial 1" 
+                   TextColor="Red"
+               HorizontalTextAlignment="Start"></Label>
+        
+            <Label Text="Seguimiento 1" 
+            HorizontalTextAlignment="Start">
+            </Label>
+            <Entry x:Name="txtSeguimiento" 
+                   Placeholder="Ingrese calificacion seguimiento"
+                   Keyboard="Numeric"
+                   TextChanged="OnEntryTextChanged"></Entry>
+            <Label Text="Examen 1" 
+                   HorizontalTextAlignment="Start">
+            </Label>
+            <Entry x:Name="txtExamen" 
+                   Placeholder="Ingrese calificacion examen"
+                   Keyboard="Numeric" 
+                   TextChanged="OnEntryTextChanged"></Entry>
+           
+
+            <Label Text="Parcial 2" 
+                   TextColor="Red"
+                   HorizontalTextAlignment="Start"></Label>
+
+            <Label Text="Seguimiento 2" 
+                   HorizontalTextAlignment="Start">
+            </Label>
+            <Entry x:Name="txtSeguimiento2" 
+                   Placeholder="Ingrese calificacion seguimiento 2"
+                   Keyboard="Numeric"
+                   TextChanged="OnEntryTextChanged"></Entry>
+            <Label Text="Examen 2" 
+                   HorizontalTextAlignment="Start">
+            </Label>
+            <Entry x:Name="txtExamen2" 
+                   Placeholder="Ingrese calificacion examen 2"
+                   Keyboard="Numeric"
+                   TextChanged="OnEntryTextChanged"></Entry>
+            
+
+
+
+            <Button x:Name="btnInformacion" Text="Mostrar informacion del Estudiante"
+                    Clicked="btnInformacion_Clicked">
+                
+            </Button>
+        
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
